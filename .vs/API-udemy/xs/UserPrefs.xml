@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{C64F15C6-21B9-42AF-8233-51C404DE4821}|">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="API-udemy/App_Start/WebApiConfig.cs" Line="1" Column="1" />
+      <File FileName="API-udemy/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="API-udemy/Web.config" Line="16" Column="28" />
+      <File FileName="API-udemy/Models/Quote.cs" Line="9" Column="46" />
+      <File FileName="API-udemy/Controllers/QuotesController.cs" Line="20" Column="42" />
+      <File FileName="API-udemy/Data/QuotesDbContext.cs" Line="4" Column="23" />
+      <File FileName="API-udemy/packages.config" Line="9" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="API-udemy" expanded="True">
+            <Node name="API-udemy" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Global.asax" expanded="True" />
+              <Node name="Web.config" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.API-udemy PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SQLite.3.13.0\build\net45\SQLite.props" Condition="Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C64F15C6-21B9-42AF-8233-51C404DE4821}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>APIudemy</RootNamespace>
+    <AssemblyName>API-udemy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe">
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.112.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.112.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.112.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform">
+      <HintPath>..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks">
+      <HintPath>..\packages\NuGet.Frameworks.4.5.0\lib\net45\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Common">
+      <HintPath>..\packages\NuGet.Common.4.5.0\lib\net45\NuGet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="NuGet.Configuration">
+      <HintPath>..\packages\NuGet.Configuration.4.5.0\lib\net45\NuGet.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="NuGet.Versioning">
+      <HintPath>..\packages\NuGet.Versioning.4.5.0\lib\net45\NuGet.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.LibraryModel">
+      <HintPath>..\packages\NuGet.LibraryModel.4.5.0\lib\net45\NuGet.LibraryModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core">
+      <HintPath>..\packages\NuGet.Packaging.Core.4.5.0\lib\net45\NuGet.Packaging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging">
+      <HintPath>..\packages\NuGet.Packaging.4.5.0\lib\net45\NuGet.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Protocol">
+      <HintPath>..\packages\NuGet.Protocol.4.5.0\lib\net45\NuGet.Protocol.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="NuGet.DependencyResolver.Core">
+      <HintPath>..\packages\NuGet.DependencyResolver.Core.4.5.0\lib\net45\NuGet.DependencyResolver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.ProjectModel">
+      <HintPath>..\packages\NuGet.ProjectModel.4.5.0\lib\net45\NuGet.ProjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Commands">
+      <HintPath>..\packages\NuGet.Commands.4.5.0\lib\net45\NuGet.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Resolver">
+      <HintPath>..\packages\NuGet.Resolver.4.5.0\lib\net45\NuGet.Resolver.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.PackageManagement">
+      <HintPath>..\packages\NuGet.PackageManagement.4.5.0\lib\net45\NuGet.PackageManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="System.ComponentModel.Composition" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Models\Quote.cs" />
+    <Compile Include="Controllers\QuotesController.cs" />
+    <Compile Include="Data\QuotesDbContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.112.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net45\System.Data.SQLite.Core.targets')" />
+</Project>
